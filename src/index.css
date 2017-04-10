@@ -4,12 +4,16 @@ body {
 
 .box {
   background-color: #3d4543;
-  height: 300px;
+  height: 358px;
   width: 250px;
   border-radius: 10px;
   position: relative;
   top: 80px;
   left: 40%;
+}
+
+.title {
+  padding-top: 17px;
 }
 
 .display {
@@ -24,7 +28,7 @@ body {
 .display input {
   position: relative;
   left: 2px;
-  top: 2px;
+  top: -1px;
   height: 35px;
   color: black;
   background-color: #bccd95;

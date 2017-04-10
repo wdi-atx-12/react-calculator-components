@@ -8,6 +8,10 @@ class App extends Component {
       <div className="App">
         <h1>React Calculator!</h1>
         <div className="box">
+          <div className ="title">
+            <p>GA Instruments TI-WDI</p>
+
+          </div>
           <div className="display">
             <input type="text" readonly size="18" id="d"/>
           </div>
@@ -18,7 +22,6 @@ class App extends Component {
               <input type="button" className="button gray" value="m+" />
               <input type="button" className="button pink" value="/" />
             </p>
-
             <p>
             <input type="button" className="button black" value="7" />
               <input type="button" className="button black" value="8" />
