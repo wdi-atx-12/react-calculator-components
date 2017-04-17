@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -12,7 +11,7 @@ class App extends Component {
             <p>GA Instruments TI-WDI</p>
           </div>
           <div className="display">
-            <input type="text" readonly size="18" id="d"/>
+            <input type="text" readOnly size="18" id="d"/>
           </div>
           <div className="keys">
             <p>
