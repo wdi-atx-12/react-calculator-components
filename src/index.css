@@ -1,15 +1,21 @@
 body {
-  background-color: rgb(125, 55, 136);
+  background-color: gray;
+  font-family: verdana;
+}
+
+p {
+  margin: 0;
 }
 
 .box {
-  background-color: #3d4543;
+  background-color: white;
   height: 358px;
-  width: 250px;
+  width: 252px;
   border-radius: 10px;
   position: relative;
   top: 80px;
   left: 40%;
+  overflow: hidden;
 }
 
 .title {
@@ -17,91 +23,69 @@ body {
 }
 
 .display {
-  background-color: #222;
-  width: 220px;
   position: relative;
-  left: 15px;
-  top: 20px;
+  top: 10px;
   height: 40px;
 }
 
 .display input {
-  position: relative;
-  left: 2px;
-  top: -1px;
-  height: 35px;
   color: black;
-  background-color: #bccd95;
+  position: relative;
+  height: 38px;
+  width: 224px;
+  border: none;
   font-size: 21px;
   text-align: right;
 }
 
 .keys {
   position: relative;
-  top: 15px;
+  top: 19px;
+  background-color: #ddcee8;
 }
 
 .button {
-  width: 40px;
-  height: 30px;
-  border: none;
-  border-radius: 8px;
-  margin-left: 17px;
+  margin: 0;
+  width: 63px;
+  height: 53px;
   cursor: pointer;
-  border-top: 2px solid transparent;
+  font-size: 16px;
+  font-weight: 100;
+}
+.button:hover {
+  filter: brightness(110%);
 }
 
 .button.gray {
-  color: white;
-  background-color: #6f6f6f;
-  border-bottom: black 2px solid;
-  border-top: 2px #6f6f6f solid;
+  background: linear-gradient(0deg, #f7e4fd, #f1c2fb);
 }
 
 .button.pink {
-  color: black;
-  background-color: #ff4561;
-  border-bottom: black 2px solid;
+  color: white;
+  background: linear-gradient(0deg, #f9cf73, #ffb470);
 }
 
 .button.black {
-  color: white;
-  background-color: #303030;
-  border-bottom: black 2px solid;
-  border-top: 2px #303030 solid;
+  background: linear-gradient(0deg, #ededed, white);
 }
 
 .button.orange {
-  color: black;
-  background-color: #FF9933;
-  border-bottom: black 2px solid;
-  border-top: 2px #FF9933 solid;
+  color: white;
+  background: linear-gradient(0deg, #ffa36f, #ff896e);
+}
+
+.button:focus {
+  outline: none;
 }
 
 .gray:active {
-  border-top: black 2px solid;
-  border-bottom: 2px #6f6f6f solid;
 }
 
 .pink:active {
-  border-top: black 2px solid;
-  border-bottom: #ff4561 2px solid;
 }
 
 .black:active {
-  border-top: black 2px solid;
-  border-bottom: #303030 2px solid;
 }
 
 .orange:active {
-  border-top: black 2px solid;
-  border-bottom: #FF9933 2px solid;
-}
-
-p {
-  line-height: 10px;
-}
-
-h1 {
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
