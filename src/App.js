@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Display from './Display.js';
+import Title from './Title.js';
 import Row from './Row.js';
 import './index.css';
 import './App.css';
@@ -14,7 +14,7 @@ class App extends Component {
             <p>GA Instruments TI-WDI</p>
           </div>
           <div className="display">
-            <Display />
+            <Title />
           </div>
           <div className="keys">
               <Row color={['gray', 'gray', 'gray', 'pink']} label={['mrc', 'm-', 'm+', '/']} />
