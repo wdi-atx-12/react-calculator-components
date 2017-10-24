@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
+import Button from './Button.js'
 import './App.css';
+import FirstRow from './RowOne.js';
+import SecondRow from './RowTwo.js';
+import ThirdRow from './RowThree.js';
+import FourthRow from './RowFour.js';
+import FifthRow from './RowFive.js';
 
 class App extends Component {
-  render() { // This is a mess! Let's break this down into components.
+  render() {
     return (
       <div className="App">
         <h1>React Calculator!</h1>
@@ -14,36 +20,11 @@ class App extends Component {
             <input type="text" readOnly size="18" id="d"/>
           </div>
           <div className="keys">
-            <p>
-              <input type="button" className="button gray" value="mrc" />
-              <input type="button" className="button gray" value="m-" />
-              <input type="button" className="button gray" value="m+" />
-              <input type="button" className="button pink" value="/" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="7" />
-              <input type="button" className="button black" value="8" />
-              <input type="button" className="button black" value="9" />
-              <input type="button" className="button pink" value="*" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="4" />
-              <input type="button" className="button black" value="5" />
-              <input type="button" className="button black" value="6" />
-              <input type="button" className="button pink" value="-" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="1" />
-              <input type="button" className="button black" value="2" />
-              <input type="button" className="button black" value="3" />
-              <input type="button" className="button pink" value="+" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="0" />
-              <input type="button" className="button black" value="." />
-              <input type="button" className="button black" value="C" />
-              <input type="button" className="button orange" value="=" />
-            </p>
+            <FirstRow />
+            <SecondRow />
+            <ThirdRow />
+            <FourthRow />
+            <FifthRow />
           </div>
         </div>
       </div>
