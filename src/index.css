@@ -1,15 +1,17 @@
 body {
-  background-color: rgb(125, 55, 136);
+  background-color: #E0F7FA;
+  text-align: center;
 }
 
 .box {
-  background-color: #3d4543;
-  height: 358px;
+  background-color: white;
+  height: 375px;
   width: 250px;
   border-radius: 10px;
   position: relative;
   top: 80px;
   left: 40%;
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.4);
 }
 
 .title {
@@ -17,12 +19,13 @@ body {
 }
 
 .display {
-  background-color: #222;
+  background-color: white;
   width: 220px;
   position: relative;
   left: 15px;
   top: 20px;
   height: 40px;
+  color: #4DD0E1;
 }
 
 .display input {
@@ -30,67 +33,125 @@ body {
   left: 2px;
   top: -1px;
   height: 35px;
-  color: black;
-  background-color: #bccd95;
+  color: #4DD0E1;
+  background-color: black;
   font-size: 21px;
   text-align: right;
+  border-radius: 10px;
+  margin-top: -10px;
 }
 
 .keys {
   position: relative;
   top: 15px;
+  padding-right: 7px;
+  padding-bottom: 7px;
 }
 
 .button {
+  color: black;
   width: 40px;
   height: 30px;
   border: none;
-  border-radius: 8px;
   margin-left: 17px;
-  cursor: pointer;
   border-top: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+  background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+  border-radius: 50% / 14%;
+  box-shadow:
+    0px 3px 0px 0px #B6B6B6,
+    0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  border : 1px solid #C4C4C4;
 }
 
 .button.gray {
-  color: white;
-  background-color: #6f6f6f;
+  color: black;
+  background-color: #4DD0E1;
   border-bottom: black 2px solid;
   border-top: 2px #6f6f6f solid;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+  background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+  border-radius: 50% / 14%;
+  box-shadow:
+    0px 3px 0px 0px #B6B6B6,
+    0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  border : 1px solid #C4C4C4;
 }
 
 .button.pink {
   color: black;
   background-color: #ff4561;
   border-bottom: black 2px solid;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+  background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+  border-radius: 50% / 14%;
+  box-shadow:
+    0px 3px 0px 0px #B6B6B6,
+    0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  border : 1px solid #C4C4C4;
 }
 
 .button.black {
-  color: white;
+  color: black;
   background-color: 303030;
   border-bottom: black 2px solid;
   border-top: 2px 303030 solid;
+  border-radius: 50% / 14%;
+  background: linear-gradient(to bottom, rgb(124,197,201) 0%,rgb(135,216,220) 100%);
+  border : 1px solid #64adaf;
+  box-shadow:
+    0px 6px 0px 0px rgba(100, 173, 175, 1),
+    0px 5px 12px 0px rgba(0, 0, 0, 0.4);
 }
+
 
 .button.orange {
   color: black;
-  background-color: FF9933;
+  background-color: #FF9933;
   border-bottom: black 2px solid;
   border-top: 2px FF9933 solid;
+  background: -webkit-gradient(linear, left top, left bottom, from(#EDEDED), to(#DCDCDC));
+  background: -moz-linear-gradient(top, #EDEDED, #DCDCDC);
+  border-radius: 50% / 14%;
+  box-shadow:
+    0px 3px 0px 0px #B6B6B6,
+    0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  border : 1px solid #C4C4C4;
 }
 
 .gray:active {
-  border-top: black 2px solid;
-  border-bottom: 2px #6f6f6f solid;
+  top: 1px;
+  box-shadow: 0px 0px 0px 0px rgba(100, 173, 175, 1),
+  0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+}
+
+.gray:hover {
+  border: 1px solid #919191;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DCDCDC));
+  background: -moz-linear-gradient(top, #FFFFFF, #DCDCDC);
 }
 
 .pink:active {
-  border-top: black 2px solid;
-  border-bottom: #ff4561 2px solid;
+  top: 1px;
+  box-shadow: 0px 0px 0px 0px rgba(100, 173, 175, 1),
+  0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+}
+
+.pink:hover {
+  border: 1px solid #919191;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFFFFF), to(#DCDCDC));
+  background: -moz-linear-gradient(top, #FFFFFF, #DCDCDC);
 }
 
 .black:active {
-  border-top: black 2px solid;
-  border-bottom: #303030 2px solid;
+  top: 2px;
+  box-shadow: 0px 2px 0px 0px rgba(100, 173, 175, 1),
+  0px 5px 6px 0px rgba(0, 0, 0, 0.4);
+}
+
+.black:hover {
+  background: linear-gradient(to bottom, #A7DEE2 0%,rgb(135,216,220) 100%);
+  border: 1px solid #818181;
 }
 
 .orange:active {
