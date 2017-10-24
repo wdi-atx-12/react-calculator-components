@@ -1,51 +1,37 @@
 import React, { Component } from 'react';
 import './App.css';
+import Calculator from './Calculator';
 
 class App extends Component {
   render() { // This is a mess! Let's break this down into components.
+  //break down into calculator, row, button
+  //calculator props: title, display, keys the value and the class name
+    const buttonsObj=[
+      ['mrc', 'button gray'],
+      ['m-' , 'button gray'],
+      ['m+' , 'button gray'],
+      ['/' , 'button pink'],
+      ['7' , 'button black'],
+      ['8' , 'button black'],
+      ['9' , 'button black'],
+      ['*' , 'button pink'],
+      ['4' , 'button black'],
+      ['5' , 'button black'],
+      ['6' , 'button black'],
+      ['-' , 'button pink'],
+      ['1' , 'button black'],
+      ['2' , 'button black'],
+      ['3' , 'button black'],
+      ['+' , 'button pink'],
+      ['0' , 'button black'],
+      ['.' , 'button black'],
+      ['C' , 'button black'],
+      ['=' , 'button pink']
+    ]
     return (
       <div className="App">
         <h1>React Calculator!</h1>
-        <div className="box">
-          <div className="title">
-            <p>GA Instruments TI-WDI</p>
-          </div>
-          <div className="display">
-            <input type="text" readOnly size="18" id="d"/>
-          </div>
-          <div className="keys">
-            <p>
-              <input type="button" className="button gray" value="mrc" />
-              <input type="button" className="button gray" value="m-" />
-              <input type="button" className="button gray" value="m+" />
-              <input type="button" className="button pink" value="/" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="7" />
-              <input type="button" className="button black" value="8" />
-              <input type="button" className="button black" value="9" />
-              <input type="button" className="button pink" value="*" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="4" />
-              <input type="button" className="button black" value="5" />
-              <input type="button" className="button black" value="6" />
-              <input type="button" className="button pink" value="-" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="1" />
-              <input type="button" className="button black" value="2" />
-              <input type="button" className="button black" value="3" />
-              <input type="button" className="button pink" value="+" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="0" />
-              <input type="button" className="button black" value="." />
-              <input type="button" className="button black" value="C" />
-              <input type="button" className="button orange" value="=" />
-            </p>
-          </div>
-        </div>
+        <Calculator title={'Ayylmao'} display={'input goes here'} keys={buttonsObj}/>
       </div>
     );
   }
