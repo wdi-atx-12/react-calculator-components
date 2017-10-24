@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Display from './Display.js';
+import Row from './Row.js';
+import './index.css';
 import './App.css';
 
 class App extends Component {
@@ -11,39 +14,14 @@ class App extends Component {
             <p>GA Instruments TI-WDI</p>
           </div>
           <div className="display">
-            <input type="text" readOnly size="18" id="d"/>
+            <Display />
           </div>
           <div className="keys">
-            <p>
-              <input type="button" className="button gray" value="mrc" />
-              <input type="button" className="button gray" value="m-" />
-              <input type="button" className="button gray" value="m+" />
-              <input type="button" className="button pink" value="/" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="7" />
-              <input type="button" className="button black" value="8" />
-              <input type="button" className="button black" value="9" />
-              <input type="button" className="button pink" value="*" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="4" />
-              <input type="button" className="button black" value="5" />
-              <input type="button" className="button black" value="6" />
-              <input type="button" className="button pink" value="-" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="1" />
-              <input type="button" className="button black" value="2" />
-              <input type="button" className="button black" value="3" />
-              <input type="button" className="button pink" value="+" />
-            </p>
-            <p>
-              <input type="button" className="button black" value="0" />
-              <input type="button" className="button black" value="." />
-              <input type="button" className="button black" value="C" />
-              <input type="button" className="button orange" value="=" />
-            </p>
+            <Row color={['gray', 'gray', 'gray', 'pink']} label={['mrc', 'm-', 'm+', '/']} />
+            <Row color={['black', 'black', 'black', 'pink']} label={['7', '8', '9', '*']} />
+            <Row color={['black', 'black', 'black', 'pink']} label={['4', '5', '6', '-']} />
+            <Row color={['black', 'black', 'black', 'pink']} label={['1', '2', '3', '+']} />
+            <Row color={['black', 'black', 'black', 'orange']} label={['0', '.', 'C', '=']} />
           </div>
         </div>
       </div>
